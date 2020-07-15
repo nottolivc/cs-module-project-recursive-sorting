@@ -11,4 +11,13 @@ def binary_search(arr, target, start, end):
 # or iteratively
 def agnostic_binary_search(arr, target):
     # Your code here
+# base case
+# recursion case (how to get to base case)
+# can be solved with iteration
 
+
+def sum_min(arr):
+    if len(arr) == 1:
+        return min(arr[0])
+    else:
+        return min(arr[0]) + sum_min(arr[1:])
